@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/grey"
     tools:context=".segundo.SecondFragment">
 
     <ImageButton
@@ -111,6 +112,7 @@
         android:id="@+id/btonIrCarrito"
         android:layout_width="160dp"
         android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
         android:text="@string/guardar_en_el_carrito"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/grey"
     tools:context=".primero.FirstFragment">
 
     <com.google.android.material.textview.MaterialTextView
@@ -12,11 +13,12 @@
         android:layout_height="50dp"
         android:gravity="center"
         android:paddingStart="10sp"
-        android:text="Shoes Tap"
+        android:text="@string/shoes_tap"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry" />
 
     <ImageButton
         android:id="@+id/btnCarrito"
@@ -35,10 +37,9 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview1"

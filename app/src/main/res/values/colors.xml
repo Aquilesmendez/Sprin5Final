@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <!--Color para los fondos de pantalla. -->
+    <color name="grey">#978F8F</color>
+
 </resources>

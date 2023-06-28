@@ -19,13 +19,13 @@ class FirstFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        //Configuramos nuestro objeto de la clase viewBinding y enlazamos el dinseño con la vista.
         binding = FragmentFirstBinding.inflate(inflater,container,false)
         return binding.root
     }
@@ -33,6 +33,7 @@ class FirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        //Creamos un evento escuchador para ir al carrito.
         binding.btnCarrito.setOnClickListener{
             Navigation.findNavController(binding.root)
                 .navigate(R.id.action_firstFragment_to_thirdFragment)
@@ -40,9 +41,9 @@ class FirstFragment : Fragment() {
 
         //Llamamos a la funcion que llama al adapatador.
         Inicializador()
-
     }
 
+    //Funcion que inicia y configura el recyclerview.
     fun Inicializador(){
         val recyclerView = binding.recyclerview1
         recyclerView.layoutManager = GridLayoutManager(requireContext(),2)

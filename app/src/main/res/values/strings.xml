@@ -1,7 +1,9 @@
 <resources>
-    <string name="app_name">Sprint Final Modulo 5</string>
+    <string name="app_name">Shoes Tap</string>
+
     <!--Strings Primer Fragmento-->
     <string name="zapatos">ZAPATOS</string>
+    <string name="shoes_tap">Shoes Tap</string>
 
     <!--Strings Segundo Fragmento-->
     <string name="tallas">TALLAS</string>
@@ -10,8 +12,9 @@
     <string name="_38">38</string>
     <string name="_39">39</string>
     <string name="_40">40</string>
-    <string name="guardar_en_el_carrito">GUARDAR EN EL CARRITO</string>
+    <string name="guardar_en_el_carrito">AÑADIR AL CARRITO</string>
 
     <!--Strings Tercer Fragmento-->
     <string name="mi_carrito">MI CARRITO</string>
+
 </resources>
